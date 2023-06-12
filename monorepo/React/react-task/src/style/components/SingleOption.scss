@@ -1,0 +1,19 @@
+.single-option{
+ min-height: 70vh;
+ display: flex;
+ width: 100%;
+ padding-top: 60px;
+ &-box{
+    background-color: $white;
+    height: fit-content;
+    padding:25px 35px;
+    h1{
+        @include text(22, 22, 19, $blue, "unset");
+     }
+     h2{
+        @include text(23, 20, 18, $black, "unset");
+        font-weight: 400;
+     }
+ }
+
+}

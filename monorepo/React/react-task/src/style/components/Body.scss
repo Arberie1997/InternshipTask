@@ -1,0 +1,52 @@
+
+// BODY STYLE
+.options{
+    padding: 35px 0px 50px 0px;
+    min-height: 100vh;
+    @include respond(md) {
+        min-height: fit-content;
+    }
+    &-list{
+        width:40vw;
+        display:flex;
+        flex-direction: column;
+        background-color: $white;
+        padding: 28px 28px 35px 28px;
+        margin-bottom: 25px;
+        @include respond(xl) {
+            width:60vw;
+        }
+        @include respond(md) {
+            width:85vw;
+        }
+        &-item{
+            display: flex;
+            align-items: center;
+            margin-bottom: 13px;
+            border:1px solid $lightgray;
+            border-radius: 3px;
+            padding: 10px 20px;
+            width:100%;
+            cursor:pointer;
+            @include slow;
+            &:hover{
+                margin-left: 3px;
+             
+            }
+            h2{
+                @include text(20, 17, 16, $black, "sans-serif");
+                margin-bottom: 0px;
+            }
+            img{
+                height: 30px;
+                width: 30px;
+                object-fit: cover;
+                margin-right: 12px;
+            }
+            svg{
+                margin-left: auto;
+                fill:$gray;
+            }
+        }
+    }
+}

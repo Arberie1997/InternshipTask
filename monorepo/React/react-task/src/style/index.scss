@@ -1,0 +1,12 @@
+// ABSTRACT
+@import "./abstracts/variables.scss";
+@import "./abstracts/mixins.scss";
+
+
+// PROJECT COMPONENT'S STYLE
+@import "./components/SingleOption";
+@import "./components/Header.scss";
+@import "./components/Contact.scss";
+@import "./components/Body.scss";
+@import "./components/Footer.scss";
+

@@ -1,0 +1,12 @@
+// HEADER STYLE
+.nav{
+    padding: 18px 0px 15px 0px;
+    &-title{
+        @include text(19, 18, 17, $black, "unset");
+        margin-bottom: 0px;
+    }
+    &-step{
+        @include text(18, 17, 17, $gray, "sans-serif");
+        opacity:0.7;
+    }
+}

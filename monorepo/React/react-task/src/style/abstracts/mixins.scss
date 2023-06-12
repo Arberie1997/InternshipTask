@@ -1,0 +1,60 @@
+
+// ================ Media Query ====================
+
+// 	xs  -  480px
+// 	sm  -  768px"
+//  md  -  992px"
+//  lg  -  1200px"
+//  xl  -  1600px"
+@mixin respond($breakpoint) {
+	@if $breakpoint == xs {
+		@media (max-width: 480px) {
+			@content;
+		}
+	}
+	@if $breakpoint == sm {
+		@media (max-width: 768px) {
+			@content;
+		}
+	}
+	@if $breakpoint == md {
+		@media (max-width: 992px) {
+			@content;
+		}
+	}
+	@if $breakpoint == lg {
+		@media (max-width: 1200px) {
+			@content;
+		}
+	}
+	@if $breakpoint == xl {
+		@media (max-width: 1400px) {
+			@content;
+		}
+	}
+	@if $breakpoint == xxl {
+		@media (max-width: 1600px) {
+			@content;
+		}
+	}
+}
+
+@mixin text($size1, $size2, $size3, $color, $family) {
+	font-size: #{$size1}px;
+	font-family: #{$family};
+	color: $color;
+	@include respond(xxl) {
+		font-size: #{$size2}px;
+	}
+	@include respond(xl) {
+		font-size: #{$size2}px;
+	}
+	@include respond(md) {
+		font-size: #{$size3}px;
+	}
+}
+
+
+@mixin slow {
+	transition: 0.3s all ease-in-out;
+}

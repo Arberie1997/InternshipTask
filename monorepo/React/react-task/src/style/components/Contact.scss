@@ -1,0 +1,23 @@
+.contact-info{
+    width:40vw;
+    margin:0 auto;
+    background-color: $white;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include respond(xl) {
+        width:60vw;
+    }
+    @include respond(md) {
+        width:85vw;
+    }
+    h2{
+        @include text(18, 16, 16, $gray, "sans-serif");
+        margin-bottom: 0px;
+    }
+    a{
+        text-decoration: none;
+        color:$blue;
+    }
+}
